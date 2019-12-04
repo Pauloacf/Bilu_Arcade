@@ -57,8 +57,9 @@ def menu():
                 on_menu = False
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_RETURN and rect_pos_y == height1:
-                    game()
+                    pygame.mixer.quit()
                     on_menu = False
+                    game()
                 if event.key == pygame.K_RETURN and rect_pos_y == height2:
                     credit()
 
